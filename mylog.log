@@ -1,0 +1,65 @@
+What is in a collaborate stdClass Object
+(
+    [id] => 2
+    [course] => 2
+    [name] => Testing Debugger Collaborate
+    [intro] => <p dir="ltr" style="text-align: left;">TESTING IS NOT FUN!!<br></p>
+    [introformat] => 1
+    [title] => 
+    [timecreated] => 1601800694
+    [timemodified] => 0
+    [grade] => 100
+)
+
+What is in a collaborate stdClass Object
+(
+    [id] => 2
+    [course] => 2
+    [name] => Testing Debugger Collaborate
+    [intro] => <p dir="ltr" style="text-align: left;">TESTING IS NOT FUN!!<br></p>
+    [introformat] => 1
+    [title] => 
+    [timecreated] => 1601800694
+    [timemodified] => 0
+    [grade] => 100
+)
+
+What is in a collaborate stdClass Object
+(
+    [id] => 1
+    [course] => 2
+    [name] => Collaborate mod activity
+    [intro] => <p dir="ltr" style="text-align: left;">Hello</p><p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/books-1204029_1920.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="500" height="332"><br></p>
+    [introformat] => 1
+    [title] => 
+    [timecreated] => 1601800313
+    [timemodified] => 1601800346
+    [grade] => 100
+)
+
+What is in a collaborate stdClass Object
+(
+    [id] => 1
+    [course] => 2
+    [name] => Collaborate mod activity
+    [intro] => <p dir="ltr" style="text-align: left;">Hello</p><p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/books-1204029_1920.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="500" height="332"><br></p>
+    [introformat] => 1
+    [title] => 
+    [timecreated] => 1601800313
+    [timemodified] => 1601800346
+    [grade] => 100
+)
+
+What is in a collaborate stdClass Object
+(
+    [id] => 1
+    [course] => 2
+    [name] => Collaborate mod activity
+    [intro] => <p dir="ltr" style="text-align: left;">Hello</p><p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/books-1204029_1920.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="500" height="332"><br></p>
+    [introformat] => 1
+    [title] => 
+    [timecreated] => 1601800313
+    [timemodified] => 1602485406
+    [grade] => 100
+)
+
