@@ -47,3 +47,7 @@ $string['pageviewed'] = 'Collaborate Page Viewed Event';
 
 // Mod form specific collaborate settings.
 $string['title'] = 'Activity Title: ';
+
+// Mod form specific collaborate settings.
+$string['title'] = 'Activity Title: ';
+$string['texteditor'] = 'Instructions {$a}';
