@@ -51,3 +51,12 @@ $string['title'] = 'Activity Title: ';
 // Mod form specific collaborate settings.
 $string['title'] = 'Activity Title: ';
 $string['texteditor'] = 'Instructions {$a}';
+
+// User button labels.
+$string['studenta'] = 'Partner A';
+$string['studentb'] = 'Partner B';
+
+$string['returnview'] = 'Return to View Page';
+$string['user'] = 'User {$a}';
+
+$string['collaboratetitle']  = 'Collaborate Title';

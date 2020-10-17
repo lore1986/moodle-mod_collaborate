@@ -30,46 +30,44 @@ use renderable;
 use renderer_base;
 use templatable;
 use stdClass;
+use moodle_url;
 
-/**
- * collaborate: Create a new view page renderable object
- *
- * @param string title - intro page title.
- * @param int height - course module id.
- * @copyright  2020 Richard Jones <richardnz@outlook.com>
- */
-
-class view implements renderable, templatable {
+class showpage implements renderable, templatable {
 
     protected $collaborate;
-    protected $id;
+    protected $cm;
+    protected $page;
 
-    public function __construct($collaborate, $id) {
+    public function __construct($collaborate, $cm, $page) {
 
         $this->collaborate = $collaborate;
-        $this->id = $id;
+        $this->cm = $cm;
+        $this->page = $page;
     }
+
     /**
      * Export this data so it can be used as the context for a mustache template.
      *
      * @param renderer_base $output
      * @return stdClass
      */
+
     public function export_for_template(renderer_base $output) {
 
         $data = new stdClass();
 
-        $data->title = $this->collaborate->title;
-        // Moodle handles processing of std intro field.
-        $data->body = format_module_intro('collaborate',
-                $this->collaborate, $this->id);
-        $data->extracontent = "Hello from extra data";
-        
-        // Set up the user page URLs and call the "template page" showpage.php
-        $a = new \moodle_url('/mod/collaborate/showpage.php', ['cid' => $this->collaborate->id, 'page' => 'a']);
-        $b = new \moodle_url('/mod/collaborate/showpage.php', ['cid' => $this->collaborate->id, 'page' => 'b']);
-        $data->url_a = $a->out(false);
-        $data->url_b = $b->out(false);
+        $data->heading = $this->collaborate->title;
+
+        $data->user = 'User: '. strtoupper($this->page);
+
+        // Get the content from the database.
+        $content = ($this->page == 'a') ? $this->collaborate->instructionsa : $this->collaborate->instructionsb;
+        $data->body = $content;
+
+        var_dump($this);
+        // Get a return url back to view page.
+        $urlv = new moodle_url('/mod/collaborate/view.php', ['id' => $this->cm->id]);
+        $data->url_view = $urlv->out(false);
 
         return $data;
     }

@@ -24,6 +24,7 @@
  * @see https://github.com/justinhunt/moodle-mod_collaborate */
 
 use mod_collaborate\output\view;
+
 require_once('../../config.php');
 
 // We need the course module id (id) or
@@ -61,7 +62,7 @@ $completion->set_module_viewed($cm);
 
 // Let's add the module viewed event.
 $event = \mod_collaborate\event\page_viewed::create(['context' => $PAGE->context]);
-//$event->trigger();
+$event->trigger();
 
 // Check for intro page content.
 if (!$collaborate->intro) {
