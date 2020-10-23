@@ -41,6 +41,7 @@
  $course = $DB->get_record('course', ['id'=>$courseid], '*', MUST_EXIST);
  $context = context_module::instance($cm->id);
 
+ 
  //Set the page URL
  $PAGE->set_url('/mod/collaborate/showpage.php', ['cid' => $cid, 'page' => $page]);
 
@@ -56,7 +57,7 @@ echo $OUTPUT->header();
 
 
 // Create output object and render it using the template.
-echo $OUTPUT->render(new showpage($collaborate, $cm->id, $page));
+echo $OUTPUT->render(new showpage($collaborate, $cm, $page));
 
 // End output to browser.
 echo $OUTPUT->footer();

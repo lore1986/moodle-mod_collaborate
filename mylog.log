@@ -311,3 +311,190 @@ What is in a collaborate stdClass Object
     [grade] => 100
 )
 
+What is in a collaborate stdClass Object
+(
+    [id] => 3
+    [course] => 2
+    [name] => Collaborate Title
+    [intro] => <p dir="ltr" style="text-align: left;">Description</p><p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/formazione.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="880" height="558"><br></p>
+    [introformat] => 1
+    [title] => Activity Title
+    [instructionsa] => 
+    [instructionsaformat] => 0
+    [instructionsb] => 
+    [instructionsbformat] => 0
+    [timecreated] => 1602929602
+    [timemodified] => 0
+    [grade] => 100
+)
+
+What is in a collaborate stdClass Object
+(
+    [id] => 3
+    [course] => 2
+    [name] => Collaborate Title
+    [intro] => <p dir="ltr" style="text-align: left;">Description</p><p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/formazione.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="880" height="558"><br></p>
+    [introformat] => 1
+    [title] => Activity Title
+    [instructionsa] => 
+    [instructionsaformat] => 0
+    [instructionsb] => 
+    [instructionsbformat] => 0
+    [timecreated] => 1602929602
+    [timemodified] => 0
+    [grade] => 100
+)
+
+What is in a collaborate stdClass Object
+(
+    [id] => 1
+    [course] => 2
+    [name] => Collaborate
+    [intro] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/tra-nguyen-TVSRWmnW8Us-unsplash.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="600" height="400"><br></p>
+    [introformat] => 1
+    [title] => Activity Name One
+    [instructionsa] => 
+    [instructionsaformat] => 0
+    [instructionsb] => 
+    [instructionsbformat] => 0
+    [timecreated] => 1603203459
+    [timemodified] => 0
+    [grade] => 100
+)
+
+What is in a collaborate stdClass Object
+(
+    [id] => 1
+    [course] => 2
+    [name] => Collaborate
+    [intro] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/tra-nguyen-TVSRWmnW8Us-unsplash.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="600" height="400"><br></p>
+    [introformat] => 1
+    [title] => Activity Name One
+    [instructionsa] => 
+    [instructionsaformat] => 0
+    [instructionsb] => 
+    [instructionsbformat] => 0
+    [timecreated] => 1603203459
+    [timemodified] => 0
+    [grade] => 100
+)
+
+What is in a collaborate stdClass Object
+(
+    [id] => 1
+    [course] => 2
+    [name] => Collaborate
+    [intro] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/tra-nguyen-TVSRWmnW8Us-unsplash.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="600" height="400"><br></p>
+    [introformat] => 1
+    [title] => Activity Name One
+    [instructionsa] => 
+    [instructionsaformat] => 0
+    [instructionsb] => 
+    [instructionsbformat] => 0
+    [timecreated] => 1603203459
+    [timemodified] => 0
+    [grade] => 100
+)
+
+What is in a collaborate stdClass Object
+(
+    [id] => 1
+    [course] => 2
+    [name] => Collaborate
+    [intro] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/tra-nguyen-TVSRWmnW8Us-unsplash.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="600" height="400"><br></p>
+    [introformat] => 1
+    [title] => Activity Name One
+    [instructionsa] => 
+    [instructionsaformat] => 0
+    [instructionsb] => 
+    [instructionsbformat] => 0
+    [timecreated] => 1603203459
+    [timemodified] => 0
+    [grade] => 100
+)
+
+What is in a collaborate stdClass Object
+(
+    [id] => 1
+    [course] => 2
+    [name] => Collaborate
+    [intro] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/tra-nguyen-TVSRWmnW8Us-unsplash.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="600" height="400"><br></p>
+    [introformat] => 1
+    [title] => Activity Name One
+    [instructionsa] => 
+    [instructionsaformat] => 0
+    [instructionsb] => 
+    [instructionsbformat] => 0
+    [timecreated] => 1603203459
+    [timemodified] => 0
+    [grade] => 100
+)
+
+What is in a collaborate stdClass Object
+(
+    [id] => 1
+    [course] => 2
+    [name] => Collaborate
+    [intro] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/tra-nguyen-TVSRWmnW8Us-unsplash.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="600" height="400"><br></p>
+    [introformat] => 1
+    [title] => Activity Name One
+    [instructionsa] => 
+    [instructionsaformat] => 0
+    [instructionsb] => 
+    [instructionsbformat] => 0
+    [timecreated] => 1603203459
+    [timemodified] => 0
+    [grade] => 100
+)
+
+What is in a collaborate stdClass Object
+(
+    [id] => 1
+    [course] => 2
+    [name] => Collaborate
+    [intro] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/tra-nguyen-TVSRWmnW8Us-unsplash.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="600" height="400"><br></p>
+    [introformat] => 1
+    [title] => Activity Name One
+    [instructionsa] => 
+    [instructionsaformat] => 0
+    [instructionsb] => 
+    [instructionsbformat] => 0
+    [timecreated] => 1603203459
+    [timemodified] => 0
+    [grade] => 100
+)
+
+What is in a collaborate stdClass Object
+(
+    [id] => 1
+    [course] => 2
+    [name] => Collaborate
+    [intro] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/tra-nguyen-TVSRWmnW8Us-unsplash.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="600" height="400"><br></p>
+    [introformat] => 1
+    [title] => Activity Name One
+    [instructionsa] => 
+    [instructionsaformat] => 0
+    [instructionsb] => 
+    [instructionsbformat] => 0
+    [timecreated] => 1603203459
+    [timemodified] => 0
+    [grade] => 100
+)
+
+What is in a collaborate stdClass Object
+(
+    [id] => 1
+    [course] => 2
+    [name] => Collaborate
+    [intro] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/tra-nguyen-TVSRWmnW8Us-unsplash.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="600" height="400"><br></p>
+    [introformat] => 1
+    [title] => Activity Name One
+    [instructionsa] => 
+    [instructionsaformat] => 0
+    [instructionsb] => 
+    [instructionsbformat] => 0
+    [timecreated] => 1603203459
+    [timemodified] => 0
+    [grade] => 100
+)
+

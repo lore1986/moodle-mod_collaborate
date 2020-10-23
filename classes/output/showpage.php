@@ -64,7 +64,6 @@ class showpage implements renderable, templatable {
         $content = ($this->page == 'a') ? $this->collaborate->instructionsa : $this->collaborate->instructionsb;
         $data->body = $content;
 
-        var_dump($this);
         // Get a return url back to view page.
         $urlv = new moodle_url('/mod/collaborate/view.php', ['id' => $this->cm->id]);
         $data->url_view = $urlv->out(false);
