@@ -498,3 +498,207 @@ What is in a collaborate stdClass Object
     [grade] => 100
 )
 
+What is in a collaborate stdClass Object
+(
+    [id] => 1
+    [course] => 2
+    [name] => Collaborate
+    [intro] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/tra-nguyen-TVSRWmnW8Us-unsplash.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="600" height="400"><br></p>
+    [introformat] => 1
+    [title] => Activity Name One
+    [instructionsa] => 
+    [instructionsaformat] => 0
+    [instructionsb] => 
+    [instructionsbformat] => 0
+    [timecreated] => 1603203459
+    [timemodified] => 0
+    [grade] => 100
+)
+
+What is in a collaborate stdClass Object
+(
+    [id] => 1
+    [course] => 2
+    [name] => Collaborate
+    [intro] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/tra-nguyen-TVSRWmnW8Us-unsplash.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="600" height="400"><br></p>
+    [introformat] => 1
+    [title] => Activity Name One
+    [instructionsa] => 
+    [instructionsaformat] => 0
+    [instructionsb] => 
+    [instructionsbformat] => 0
+    [timecreated] => 1603203459
+    [timemodified] => 1603888926
+    [grade] => 100
+)
+
+What is in a collaborate stdClass Object
+(
+    [id] => 1
+    [course] => 2
+    [name] => Collaborate
+    [intro] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/tra-nguyen-TVSRWmnW8Us-unsplash.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="600" height="400"><br></p>
+    [introformat] => 1
+    [title] => Activity Name One
+    [instructionsa] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/Teaching-and-Technology-Classroom-Management-and-ICT-Solutions-608x408.jpg" alt="Alternate text a" role="presentation" class="img-responsive atto_image_button_text-bottom" width="608" height="408"><br></p>
+    [instructionsaformat] => 1
+    [instructionsb] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/33945.jpg" alt="alternate text b" class="img-responsive atto_image_button_text-bottom" width="1200" height="800"><br></p>
+    [instructionsbformat] => 1
+    [timecreated] => 1603203459
+    [timemodified] => 1603889393
+    [grade] => 100
+)
+
+What is in a collaborate stdClass Object
+(
+    [id] => 1
+    [course] => 2
+    [name] => Collaborate
+    [intro] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/tra-nguyen-TVSRWmnW8Us-unsplash.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="600" height="400"><br></p>
+    [introformat] => 1
+    [title] => Activity Name One
+    [instructionsa] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/Teaching-and-Technology-Classroom-Management-and-ICT-Solutions-608x408.jpg" alt="Alternate text a" role="presentation" class="img-responsive atto_image_button_text-bottom" width="608" height="408"><br></p>
+    [instructionsaformat] => 1
+    [instructionsb] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/33945.jpg" alt="alternate text b" class="img-responsive atto_image_button_text-bottom" width="1200" height="800"><br></p>
+    [instructionsbformat] => 1
+    [timecreated] => 1603203459
+    [timemodified] => 1603889393
+    [grade] => 100
+)
+
+What is in a collaborate stdClass Object
+(
+    [id] => 1
+    [course] => 2
+    [name] => Collaborate
+    [intro] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/tra-nguyen-TVSRWmnW8Us-unsplash.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="600" height="400"><br></p>
+    [introformat] => 1
+    [title] => Activity Name One
+    [instructionsa] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/Teaching-and-Technology-Classroom-Management-and-ICT-Solutions-608x408.jpg" alt="Alternate text a" role="presentation" class="img-responsive atto_image_button_text-bottom" width="608" height="408"><br></p>
+    [instructionsaformat] => 1
+    [instructionsb] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/33945.jpg" alt="alternate text b" class="img-responsive atto_image_button_text-bottom" width="1200" height="800"><br></p>
+    [instructionsbformat] => 1
+    [timecreated] => 1603203459
+    [timemodified] => 1603890440
+    [grade] => 100
+)
+
+What is in a collaborate stdClass Object
+(
+    [id] => 1
+    [course] => 2
+    [name] => Collaborate
+    [intro] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/tra-nguyen-TVSRWmnW8Us-unsplash.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="600" height="400"><br></p>
+    [introformat] => 1
+    [title] => Activity Name One
+    [instructionsa] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/Teaching-and-Technology-Classroom-Management-and-ICT-Solutions-608x408.jpg" alt="Alternate text a" role="presentation" class="img-responsive atto_image_button_text-bottom" width="608" height="408"><br></p>
+    [instructionsaformat] => 1
+    [instructionsb] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/33945.jpg" alt="alternate text b" class="img-responsive atto_image_button_text-bottom" width="1200" height="800"><br></p>
+    [instructionsbformat] => 1
+    [timecreated] => 1603203459
+    [timemodified] => 1603890440
+    [grade] => 100
+)
+
+What is in a collaborate stdClass Object
+(
+    [id] => 1
+    [course] => 2
+    [name] => Collaborate
+    [intro] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/tra-nguyen-TVSRWmnW8Us-unsplash.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="600" height="400"><br></p>
+    [introformat] => 1
+    [title] => Activity Name One
+    [instructionsa] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/Teaching-and-Technology-Classroom-Management-and-ICT-Solutions-608x408.jpg" alt="Alternate text a" role="presentation" class="img-responsive atto_image_button_text-bottom" width="608" height="408"><br></p>
+    [instructionsaformat] => 1
+    [instructionsb] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/33945.jpg" alt="alternate text b" class="img-responsive atto_image_button_text-bottom" width="1200" height="800"><br></p>
+    [instructionsbformat] => 1
+    [timecreated] => 1603203459
+    [timemodified] => 1603890440
+    [grade] => 100
+)
+
+What is in a collaborate stdClass Object
+(
+    [id] => 1
+    [course] => 2
+    [name] => Collaborate
+    [intro] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/tra-nguyen-TVSRWmnW8Us-unsplash.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="600" height="400"><br></p>
+    [introformat] => 1
+    [title] => Activity Name One
+    [instructionsa] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/Teaching-and-Technology-Classroom-Management-and-ICT-Solutions-608x408.jpg" alt="Alternate text a" role="presentation" class="img-responsive atto_image_button_text-bottom" width="608" height="408"><br></p>
+    [instructionsaformat] => 1
+    [instructionsb] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/33945.jpg" alt="alternate text b" class="img-responsive atto_image_button_text-bottom" width="1200" height="800"><br></p>
+    [instructionsbformat] => 1
+    [timecreated] => 1603203459
+    [timemodified] => 1603891007
+    [grade] => 100
+)
+
+What is in a collaborate stdClass Object
+(
+    [id] => 1
+    [course] => 2
+    [name] => Collaborate
+    [intro] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/tra-nguyen-TVSRWmnW8Us-unsplash.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="600" height="400"><br></p>
+    [introformat] => 1
+    [title] => Activity Name One
+    [instructionsa] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/Teaching-and-Technology-Classroom-Management-and-ICT-Solutions-608x408.jpg?time=1603891029242" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="608" height="408"><br></p>
+    [instructionsaformat] => 1
+    [instructionsb] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/33945.jpg" alt="alternate text b" class="img-responsive atto_image_button_text-bottom" width="1200" height="800"><br></p>
+    [instructionsbformat] => 1
+    [timecreated] => 1603203459
+    [timemodified] => 1603891035
+    [grade] => 100
+)
+
+What is in a collaborate stdClass Object
+(
+    [id] => 1
+    [course] => 2
+    [name] => Collaborate
+    [intro] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/tra-nguyen-TVSRWmnW8Us-unsplash.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="600" height="400"><br></p>
+    [introformat] => 1
+    [title] => Activity Name One
+    [instructionsa] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/Teaching-and-Technology-Classroom-Management-and-ICT-Solutions-608x408.jpg?time=1603891057121" alt="alternate a" class="img-responsive atto_image_button_text-bottom" width="608" height="408"><br></p>
+    [instructionsaformat] => 1
+    [instructionsb] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/33945.jpg" alt="alternate text b" class="img-responsive atto_image_button_text-bottom" width="1200" height="800"><br></p>
+    [instructionsbformat] => 1
+    [timecreated] => 1603203459
+    [timemodified] => 1603891063
+    [grade] => 100
+)
+
+What is in a collaborate stdClass Object
+(
+    [id] => 1
+    [course] => 2
+    [name] => Collaborate
+    [intro] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/tra-nguyen-TVSRWmnW8Us-unsplash.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="600" height="400"><br></p>
+    [introformat] => 1
+    [title] => Activity Name One
+    [instructionsa] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/Teaching-and-Technology-Classroom-Management-and-ICT-Solutions-608x408.jpg?time=1603891057121" alt="alternate a" class="img-responsive atto_image_button_text-bottom" width="608" height="408"><br></p>
+    [instructionsaformat] => 1
+    [instructionsb] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/33945.jpg" alt="alternate text b" class="img-responsive atto_image_button_text-bottom" width="1200" height="800"><br></p>
+    [instructionsbformat] => 1
+    [timecreated] => 1603203459
+    [timemodified] => 1603891063
+    [grade] => 100
+)
+
+What is in a collaborate stdClass Object
+(
+    [id] => 1
+    [course] => 2
+    [name] => Collaborate
+    [intro] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/tra-nguyen-TVSRWmnW8Us-unsplash.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="600" height="400"><br></p>
+    [introformat] => 1
+    [title] => Activity Name One
+    [instructionsa] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/Teaching-and-Technology-Classroom-Management-and-ICT-Solutions-608x408.jpg?time=1603891057121" alt="alternate a" class="img-responsive atto_image_button_text-bottom" width="608" height="408"><br></p>
+    [instructionsaformat] => 1
+    [instructionsb] => <p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/33945.jpg" alt="alternate text b" class="img-responsive atto_image_button_text-bottom" width="1200" height="800"><br></p>
+    [instructionsbformat] => 1
+    [timecreated] => 1603203459
+    [timemodified] => 1603891063
+    [grade] => 100
+)
+

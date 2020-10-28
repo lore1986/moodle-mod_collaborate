@@ -31,18 +31,22 @@ use renderer_base;
 use templatable;
 use stdClass;
 use moodle_url;
+use context_module;
+
 
 class showpage implements renderable, templatable {
 
     protected $collaborate;
     protected $cm;
     protected $page;
+    protected $context;
 
     public function __construct($collaborate, $cm, $page) {
 
         $this->collaborate = $collaborate;
         $this->cm = $cm;
         $this->page = $page;
+        $this->context = context_module::instance($this->cm->id);
     }
 
     /**
@@ -51,18 +55,28 @@ class showpage implements renderable, templatable {
      * @param renderer_base $output
      * @return stdClass
      */
-
     public function export_for_template(renderer_base $output) {
+        global $PAGE;
 
         $data = new stdClass();
 
         $data->heading = $this->collaborate->title;
-
-        $data->user = 'User: '. strtoupper($this->page);
+        $data->user = get_string('user', 'mod_collaborate', strtoupper($this->page));
 
         // Get the content from the database.
         $content = ($this->page == 'a') ? $this->collaborate->instructionsa : $this->collaborate->instructionsb;
-        $data->body = $content;
+
+        $filearea = 'instructions' . $this->page;
+        $content = file_rewrite_pluginfile_urls($content, 'pluginfile.php', $this->context->id,
+                'mod_collaborate', $filearea, $this->collaborate->id);
+
+        // Run the content through format_text to enable streaming video etc.
+        $formatoptions = new stdClass;
+        $formatoptions->overflowdiv = true;
+        $formatoptions->context = $this->context;
+        $format = ($this->page == 'a') ? $this->collaborate->instructionsaformat : $this->collaborate->instructionsbformat;
+
+        $data->body = format_text($content, $format, $formatoptions);
 
         // Get a return url back to view page.
         $urlv = new moodle_url('/mod/collaborate/view.php', ['id' => $this->cm->id]);
