@@ -77,15 +77,18 @@ function collaborate_add_instance(stdClass $collaborate, mod_collaborate_mod_for
     global $DB;
 
     $collaborate->timecreated = time();
+
     // Add new instance with dummy data for the editor fields.
     $collaborate->instructionsa ='a';
     $collaborate->instructionsaformat = FORMAT_HTML;
     $collaborate->instructionsb ='b';
     $collaborate->instructionsbformat = FORMAT_HTML;
 
-    // Call std Moodle file_postupdate_standard_editor to save files,
+    $collaborate->id = $DB->insert_record('collaborate', $collaborate);
+
+    // Call std Moodle file_postupdate_standard editor to save files,
     // and prepare editor content for saving in database.
-    $cmid = $collaborate->coursemodule;
+    $cmid        = $collaborate->coursemodule;
     $context = context_module::instance($cmid);
     $options = collaborate_editor::get_editor_options($context);
     $names = collaborate_editor::get_editor_names();
@@ -95,8 +98,10 @@ function collaborate_add_instance(stdClass $collaborate, mod_collaborate_mod_for
                 $context, 'mod_collaborate', $name, $collaborate->id);
     }
 
-    // Update the database.
-    return $DB->update_record('collaborate', $collaborate);
+    // OK editor data processed into two fields for database, update record.
+    $DB->update_record('collaborate', $collaborate);
+
+    return $collaborate->id;
 }
 
 /**
@@ -403,8 +408,8 @@ function collaborate_update_grades(stdClass $collaborate, $userid = 0) {
 function collaborate_get_file_areas($course, $cm, $context) {
     return [
         'instructionsa' => 'Instructions for partner A',
-        'instructionsb' => 'Instructions for partner B'
-    ];
+        'instructionsb' => 'Instructions for partner B',
+        'submissions' => 'Student submissions'];
 }
 
 /**

@@ -34,6 +34,7 @@ $string['modulename'] = 'collaborate';
 $string['modulenameplural'] = 'collaborates';
 $string['modulename_help'] = 'Use the collaborate module for... | The collaborate module allows...';
 $string['collaborate:addinstance'] = 'Add a new collaborate';
+$string['collaborate:viewreportstab'] = 'View report tab';
 $string['collaborate:submit'] = 'Submit collaborate';
 $string['collaborate:view'] = 'View collaborate';
 $string['collaboratefieldset'] = 'Custom example fieldset';
@@ -60,3 +61,16 @@ $string['returnview'] = 'Return to View Page';
 $string['user'] = 'User {$a}';
 
 $string['collaboratetitle']  = 'Collaborate Title';
+
+/* settings page */
+$string['enablereports']  = 'Enable Report';
+$string['enablereports_desc']  = 'Enable users teacher to see report';
+
+/*strings for mustache view.mustache */
+$string['viewtab']  = 'View report tab';
+$string['reportstab']  = 'Reportstab';
+
+/*submission*/
+$string['submission'] = 'Your submission';
+$string['submissionsave'] = 'Save submission';
+$string['submissionupdated'] = 'Submission updated';

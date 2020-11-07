@@ -69,13 +69,23 @@ if (!$collaborate->intro) {
     $collaborate->intro = '';
 }
 
+/* Check settings from admin settings page */
+// Show reports tab if permission exists and admin has allowed.
+$reportstab = false;
+$config = get_config('mod_collaborate');
+if ($config->enablereports) {
+    if (has_capability('mod/collaborate:viewreportstab', $PAGE->context)) {
+        $reportstab = true;
+    }
+}
+
 \mod_collaborate\local\debugging::logit("What is in a collaborate ", $collaborate);
 
 // Start output to browser.
 echo $OUTPUT->header();
 
 // Call classes/output/view and view.mustache to create output.
-echo $OUTPUT->render(new view($collaborate, $cm->id));
+echo $OUTPUT->render(new view($collaborate, $cm->id, $reportstab));
 
 // End output to browser.
 echo $OUTPUT->footer();
