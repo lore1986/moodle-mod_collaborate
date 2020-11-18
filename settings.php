@@ -31,3 +31,4 @@ if ($ADMIN->fulltree) {
         get_string('enablereports', 'mod_collaborate'),
         get_string('enablereports_desc', 'mod_collaborate'), 0));
 }
+

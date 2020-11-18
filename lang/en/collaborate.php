@@ -37,6 +37,8 @@ $string['collaborate:addinstance'] = 'Add a new collaborate';
 $string['collaborate:viewreportstab'] = 'View report tab';
 $string['collaborate:submit'] = 'Submit collaborate';
 $string['collaborate:view'] = 'View collaborate';
+$string['collaborate:exportsubmissions'] = 'Export PDF Submissions';  
+$string['collaborate:gradesubmission'] = 'Grade submissions';
 $string['collaboratefieldset'] = 'Custom example fieldset';
 $string['collaboratename'] = 'collaborate name';
 $string['collaboratename_help'] = 'Please add a Name to your Collaborate Activity. A Name is required.';
@@ -74,3 +76,21 @@ $string['reportstab']  = 'Reportstab';
 $string['submission'] = 'Your submission';
 $string['submissionsave'] = 'Save submission';
 $string['submissionupdated'] = 'Submission updated';
+$string['gradingheader'] = 'Grading';
+
+
+// Grading form.
+$string['grade'] = 'Grade';
+$string['allocate_grade'] = 'Allocate a grade';
+$string['gradingheader'] = 'Grade a submission';
+$string['currentgrade'] = 'Current grade: ';
+$string['user'] = 'User: ';
+$string['submissiongraded'] = 'Grade saved';
+$string['allocate_grade'] = 'Grades';
+
+$string['exportlink'] = 'Export Grade'; 
+$string['namechange'] = 'Change Name';
+$string['exportall'] = 'Cron Export All';
+$string['namechangeall'] = 'Name Change Task';
+$string['submission_submitted'] = 'Submission is submitted';
+$string['submission_graded'] = 'Submission is graded';

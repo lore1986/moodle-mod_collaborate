@@ -7,11 +7,13 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+namespace mod_collaborate\local;
+
 use \mod_collaborate\local\collaborate_editor;
 use \mod_collaborate\local\debugging;
 use \mod_collaborate\local\submission_form;
+use core\dataformat;
 
-namespace mod_collaborate\local;
 
 defined('MOODLE_INTERNAL') || die();
 class submissions {
@@ -71,4 +73,153 @@ class submissions {
         global $DB;
         return $DB->get_record('collaborate_submissions', ['collaborateid' => $cid, 'userid' => $userid, 'page' => $page], '*', IGNORE_MISSING);
     }
+
+     /**
+     * retrieve a submission record for grading.
+     *
+     * @param object $collaborate our collaborate instance.
+     * @param int $sid the submission id.
+     * @return object $data the data required for the grading form.
+     */
+    public static function get_submission_to_grade($collaborate, $sid) {
+        global $DB;
+
+        $record = $DB->get_record('collaborate_submissions', ['id' => $sid], '*', MUST_EXIST);
+        $data = new \stdClass();
+        $data->title = $collaborate->title;
+        $data->submission = $record->submission;
+
+        $user = $DB->get_record('user', ['id' => $record->userid], '*', MUST_EXIST);
+        $data->firstname = $user->firstname;
+        $data->lastname = $user->lastname;
+        $data->grade = $record->grade;
+
+        return $data;
+    }
+    /**
+     * Update a submission grade.
+     *
+     * @param int $sid the submission id.
+     * @param int $grade the submission grade.
+     * @return none.
+     */
+
+    public static function update_grade($sid, $grade) {
+        global $DB;
+        $DB->set_field('collaborate_submissions', 'grade', $grade, ['id' => $sid]);
+    }
+
+    /**
+    *  Get the student submission records to be saved to a file.
+    *
+    * @param object $collaborate, the Collaborate instance cotaining submissions
+    * @param object $context, the module context.
+    * @return array of objects $records, the records to be exported.
+    */
+    public static function get_export_data($collaborate, $context) {
+        global $DB;
+
+        $sql = "SELECT s.id, u.firstname, u.lastname, s.submission,  s.grade
+                  FROM {collaborate_submissions} AS s
+                  JOIN {collaborate} AS c ON s.collaborateid = c.id
+                  JOIN {user} AS u ON s.userid = u.id
+                  WHERE u.id <> 0
+                    AND s.collaborateid = :cid";
+
+        $records = $DB->get_records_sql($sql, ['cid' => $collaborate->id]);
+
+        // Process the submissions
+        foreach ($records as $record) {
+
+            $content = file_rewrite_pluginfile_urls($record->submission, 'pluginfile.php',
+                    $context->id,'mod_collaborate', 'submission', $record->id);
+
+            // Format submission.
+            $formatoptions = new \stdClass;
+            $formatoptions->noclean = true;
+            $formatoptions->overflowdiv = true;
+            $formatoptions->context = $context;
+
+            $record->submission = format_text($content, FORMAT_HTML, $formatoptions);
+        }
+        return $records;
+
+    }
+
+     /**
+    *  Get the column headers for the export file.
+    *
+    * @return String array.
+    */
+    public static function get_export_headers() {
+        return [
+            get_string('id', 'mod_collaborate'),
+            get_string('firstname', 'core'),
+            get_string('lastname', 'core'),
+            get_string('submission','mod_collaborate'),
+            get_string('grade',  'core')];
+
+    }
+
+    /**
+    *  Export all submissions of all Collaborate instances.
+    *
+    * @return none.
+    */
+    public static function export_all_submissions() {
+        global $DB;
+
+    // Get the all Collaborate instances.
+
+     $sql = "SELECT s.id, u.firstname, u.lastname, s.submission,  s.grade,
+                    c.id AS cid, c.course
+              FROM {collaborate_submissions} AS s
+              JOIN {collaborate} AS c ON s.collaborateid = c.id
+              JOIN {user} AS u ON s.userid = u.id
+              WHERE u.id <> 0";
+
+    $records = $DB->get_records_sql($sql);
+    $submissions = array();
+
+    // Locate the corresponding entries in the submissions table.
+    foreach ($records as $record) {
+
+        $data = array();
+
+        // Get the correct context for pluginfiles and formatting.
+        $courseid = $record->course;
+        $cid = $record->cid;
+        $cm = get_coursemodule_from_instance('collaborate', $cid, $courseid, false, MUST_EXIST);
+        $course = $DB->get_record('course', ['id' => $courseid], '*', MUST_EXIST);
+        $context = \context_module::instance($cm->id);
+
+        // Extract the wanted data.
+        $data['id'] = $record->id;
+        $data['firstname'] = $record->firstname;
+        $data['lastname'] = $record->lastname;
+
+        // Process media files (for printing).
+        $content = \file_rewrite_pluginfile_urls($record->submission, 'pluginfile.php',
+                $context->id,'mod_collaborate', 'submission', $record->id);
+
+        // Format submission.
+        $formatoptions = new \stdClass;
+        $formatoptions->noclean = true;
+        $formatoptions->overflowdiv = true;
+        $formatoptions->context = $context;
+
+        $data['submission'] = \format_text($content, FORMAT_HTML, $formatoptions);
+        $data['grade'] = $record->grade;
+        $submissions[] = $data;
+    }
+
+    // Export the submissions to a pdf file.
+    $fields = self::get_export_headers();
+    $download_submissions = new \ArrayObject($submissions);
+    $iterator = $download_submissions->getIterator();
+    $dataformat = 'pdf';
+    $filename = clean_filename('export_submissions_' . time());
+    $exportfile = dataformat::write_data($filename, $dataformat, $fields, $iterator);
+}
+
 }

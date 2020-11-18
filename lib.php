@@ -491,6 +491,45 @@ function collaborate_extend_navigation(navigation_node $navref, stdClass $course
  * @param settings_navigation $settingsnav complete settings navigation tree
  * @param navigation_node $collaboratenode collaborate administration node
  */
+
 function collaborate_extend_settings_navigation(settings_navigation $settingsnav, navigation_node $collaboratenode=null) {
-    // TODO Delete this function and its docblock, or implement it.
+    global $PAGE;
+
+    // Extend the settings nav with the namechenger page url.
+    $namechangeurl = new moodle_url('/mod/collaborate/namechanger.php', ['courseid' => $PAGE->course->id]);
+    $collaboratenode->add(get_string('namechange', 'mod_collaborate'), $namechangeurl);
+}
+
+function block_superframe_extend_navigation_course($navigation, $course, $context) {
+
+    $url = new moodle_url('/blocks/superframe/block_data.php');
+    $navigation->add(get_string('userlink', 'block_superframe'), $url, navigation_node::TYPE_SETTING,
+                get_string('userlink', 'block_superframe'), 'superframe',
+                new pix_icon('icon', '', 'block_superframe'));
+}
+
+function block_superframe_myprofile_navigation(core_user\output\myprofile\tree $tree,
+        $user, $iscurrentuser, $course) {
+    global $USER;
+
+        $url = new moodle_url('/blocks/superframe/block_data.php');
+        $node = new core_user\output\myprofile\node('miscellaneous', 'superframe',
+                get_string('userlink', 'block_superframe'), null, $url);
+        $tree->add_node($node);
+        return true;
+}
+
+
+/**
+ * A task called from adhoc
+ *
+ * @param progress_trace trace object
+ * @param $data - form data to update a database record
+ */
+function collaborate_do_adhoc_task(progress_trace $trace, $data) {
+    global $DB;
+    $trace->output('executing dotask');
+    if ($DB->record_exists('collaborate', array('id' => $data->id))) {
+        $DB->update_record('collaborate', $data);
+    }
 }
